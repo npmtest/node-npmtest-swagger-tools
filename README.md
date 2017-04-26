@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-swagger-tools/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-swagger-tools/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-swagger-tools/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-swagger-tools/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-swagger-tools/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-swagger-tools/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-swagger-tools/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-swagger-tools/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-swagger-tools/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-swagger-tools/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-swagger-tools/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-swagger-tools/build/coverage.html/index.html)
 
@@ -35,43 +35,37 @@
 ```json
 
 {
-    "name": "swagger-tools",
-    "version": "0.10.1",
-    "description": "Various tools for using and integrating with Swagger.",
-    "main": "index.js",
-    "scripts": {
-        "test": "./node_modules/gulp/bin/gulp.js"
-    },
     "author": {
         "name": "Jeremy Whitlock",
         "url": "https://github.com/whitlockjc"
     },
-    "bugs": {
-        "url": "https://github.com/apigee-127/swagger-tools/issues"
-    },
-    "homepage": "https://github.com/apigee-127/swagger-tools",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/apigee-127/swagger-tools.git"
-    },
-    "keywords": [
-        "api",
-        "connect",
-        "middleware",
-        "swagger"
-    ],
     "bin": {
         "swagger-tools": "./bin/swagger-tools"
     },
-    "files": [
-        "bin",
-        "index.js",
-        "LICENSE",
-        "lib",
-        "middleware",
-        "schemas"
-    ],
+    "bugs": {
+        "url": "https://github.com/apigee-127/swagger-tools/issues"
+    },
+    "dependencies": {
+        "async": "^1.3.0",
+        "body-parser": "1.12.4",
+        "commander": "^2.8.1",
+        "debug": "^2.2.0",
+        "js-yaml": "^3.3.1",
+        "json-refs": "^2.1.5",
+        "lodash-compat": "^3.10.0",
+        "multer": "^1.1.0",
+        "parseurl": "^1.3.0",
+        "path-to-regexp": "^1.2.0",
+        "qs": "^4.0.0",
+        "serve-static": "^1.10.0",
+        "spark-md5": "^1.0.0",
+        "string": "^3.3.0",
+        "superagent": "^1.2.0",
+        "swagger-converter": "^0.1.7",
+        "traverse": "^0.6.6",
+        "z-schema": "^3.15.4"
+    },
+    "description": "Various tools for using and integrating with Swagger.",
     "devDependencies": {
         "browserify": "^10.2.4",
         "connect": "^3.4.0",
@@ -97,26 +91,44 @@
         "vinyl-buffer": "^1.0.0",
         "vinyl-source-stream": "^1.1.0"
     },
-    "dependencies": {
-        "async": "^1.3.0",
-        "body-parser": "1.12.4",
-        "commander": "^2.8.1",
-        "debug": "^2.2.0",
-        "js-yaml": "^3.3.1",
-        "json-refs": "^2.1.5",
-        "lodash-compat": "^3.10.0",
-        "multer": "^1.1.0",
-        "parseurl": "^1.3.0",
-        "path-to-regexp": "^1.2.0",
-        "qs": "^4.0.0",
-        "serve-static": "^1.10.0",
-        "spark-md5": "^1.0.0",
-        "string": "^3.3.0",
-        "superagent": "^1.2.0",
-        "swagger-converter": "^0.1.7",
-        "traverse": "^0.6.6",
-        "z-schema": "^3.15.4"
-    }
+    "directories": {},
+    "dist": {
+        "shasum": "a455b257998ecf20de5b4e99bdcf1a709ab0fedc",
+        "tarball": "https://registry.npmjs.org/swagger-tools/-/swagger-tools-0.10.1.tgz"
+    },
+    "files": [
+        "bin",
+        "index.js",
+        "LICENSE",
+        "lib",
+        "middleware",
+        "schemas"
+    ],
+    "gitHead": "310d1dedbb88a3de328fc421b261e0566ffbf2af",
+    "homepage": "https://github.com/apigee-127/swagger-tools",
+    "keywords": [
+        "api",
+        "connect",
+        "middleware",
+        "swagger"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "whitlockjc"
+        }
+    ],
+    "name": "swagger-tools",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/apigee-127/swagger-tools.git"
+    },
+    "scripts": {
+        "test": "./node_modules/gulp/bin/gulp.js"
+    },
+    "version": "0.10.1"
 }
 ```
 
